@@ -17,7 +17,17 @@ void main() => runApp(
 class ContainerWidgetDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Container();
+    return new Container(
+        padding: EdgeInsets.all(16.0),
+        alignment: Alignment.centerLeft,
+        child: Text("Hello World"),
+        decoration: new BoxDecoration(
+          color: Colors.blue,
+          border: new Border.all(
+            color: Colors.black,
+            width: 8.0,
+          ),
+        ));
   }
 }
 
